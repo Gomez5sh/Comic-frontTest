@@ -1,16 +1,10 @@
-<h1 class="animated fadeIn fast">Comic <small>app</small></h1>
+<h1 class="animated fadeIn fast text-justify">Comit app</h1>
 <hr>
-<div class="card mb-3" style="max-width: 540px;">
-    <div class="row no-gutters">
-        <div class="col-md-4 animated fadeIn fast">
-            <img src="..." class="card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-            <div class="card-body animated fadeIn">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
+<div class="card mb-3">
+    <img [src]="img" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ title }}</h5>
+      <p class="card-text">{{ alt }}</p>
+      <p class="card-text"><small class="text-muted">Year of creation: {{ year }}</small></p>
     </div>
-</div>
+  </div>
