@@ -4,18 +4,16 @@ import { XkcdService } from '../../services/xkcd.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styles: [
-  ]
+  providers: [XkcdService],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-    newComic : any [] = [];
+    constructor( private data: XkcdService) {}
 
-    constructor( private xkcd: XkcdService  ) {
-        this.xkcd.getNewReleses()
-            .subscribe( (data: any) => {
-                console.log(data);
-        });
+    ngOnInit(): void {
+        this.data.getComic().subscribe( ( res: any ) => {
+            console.log(res);
+        } );
     }
 
 }

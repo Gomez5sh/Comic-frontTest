@@ -6,7 +6,7 @@ import { HttpClientModule  } from '@angular/common/http';
 import { APP_ROUTING  } from './app.routes';
 
 // Provider
-import { XkcdService } from './services/xkcd.service'; 
+import { XkcdService } from './services/xkcd.service';
 
 // COMPONETS
 import { AppComponent } from './app.component';

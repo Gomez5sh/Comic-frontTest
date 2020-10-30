@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders  } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class XkcdService {
 
-    constructor( private http: HttpClient,  ) { }
+    constructor( private http: HttpClient ) { }
 
-    getNewReleses( ){
-        return this.http.get('http://xkcd.com/info.0.json');
+    // tslint:disable-next-line: typedef
+    getComic(): Observable<any>{
+        return this.http.get<any>('/info.0.json');
     }
 }
