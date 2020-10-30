@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule  } from '@angular/common/http';
+// import { RatingModule } from 'ng-starrating';
 
 // ROUTES
 import { APP_ROUTING  } from './app.routes';
@@ -26,7 +27,8 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
       BrowserModule,
       APP_ROUTING,
-      HttpClientModule
+      HttpClientModule,
+      // RatingModule
   ],
     providers: [
         XkcdService,

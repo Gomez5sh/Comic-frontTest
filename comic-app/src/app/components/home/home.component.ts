@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { XkcdService } from '../../services/xkcd.service';
+import { StarRatingComponent } from 'ng-starrating';
 
 @Component({
   selector: 'app-home',
@@ -14,11 +15,20 @@ export class HomeComponent implements OnInit {
     year: [] = [];
 
 
-    constructor( private data: XkcdService) {}
+
+    // tslint:disable-next-line: typedef
+    /*onRate($event: {oldValue: number, newValue: number, starRating: StarRatingComponent}) {
+        alert(`Old Value:${$event.oldValue},
+          New Value: ${$event.newValue},
+          Checked Color: ${$event.starRating.checkedcolor},
+          Unchecked Color: ${$event.starRating.uncheckedcolor}`);
+      } */
+
+     constructor( private data: XkcdService) {}
 
     ngOnInit(): void {
         this.data.getComic().subscribe( res  => {
-            //console.log(res);
+            // console.log(res);
             this.img = res.img;
             this.title = res.title;
             this.alt = res.alt;
