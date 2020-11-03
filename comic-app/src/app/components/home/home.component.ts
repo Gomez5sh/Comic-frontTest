@@ -14,6 +14,12 @@ export class HomeComponent implements OnInit {
     alt: [] = [];
     year: [] = [];
 
+    isRated = false;
+
+    changeRating(){
+        this.isRated = !this.isRated;
+    }
+
 
 
     // tslint:disable-next-line: typedef

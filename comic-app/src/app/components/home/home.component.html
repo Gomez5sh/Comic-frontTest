@@ -8,5 +8,5 @@
       <p class="card-text animated fadeIn"><small class="text-muted">Year of creation: {{ year }}</small></p>
     </div>
   </div>
-  <div class="alert alert-danger text-justify animated fadeIn">Click to mark favorite</div>
+  <div class="alert alert-danger text-justify animated fadeIn m-5">Click to mark favorite <span class="fa fa-thumbs-up" [class.rate]="isRated" (click)="changeRating()"></span></div>
  
