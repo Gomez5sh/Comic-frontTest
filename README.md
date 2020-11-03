@@ -41,11 +41,17 @@ Type `npm start` to launch the App. Navigate to `http://localhost:4200/`. The ap
 
 ![app_log](https://i.imgur.com/aSwqerj.png)
 
-## Code scaffolding
+## SPA
+
+![angular_structure](https://i.imgur.com/HzLBkQ7.png)
+
+![angular_structure](https://i.imgur.com/JMyMEIw.png)
+
+![angular_structure](https://i.imgur.com/78LyKUw.png)
 
 ## Bugs
 
-Rating .
+Nothig.
 
 ## License
 

@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
 
     isRated = false;
 
-    changeRating(){
+    changeRatingo(){
         this.isRated = !this.isRated;
     }
 
